@@ -3,51 +3,43 @@
 <head>
     <!--bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!--my CSS-->
     <link rel="stylesheet" href="mystyle.css">
+
     <!--bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
-    <title>Title</title>
+    <title>Chess pieces</title>
+
     <style>
         p {
-            background-color:antiquewhite;
+            background-color:rgb(241, 215, 250);
         }
     </style>
-    <script>
-        function hello()
-        {
-            var message = prompt("What do you want to say?");
-            document.getElementById("demo").innerHTML = message;
-            document.getElementById("heading").style = "background-color:red";
-        }
-        function do_something()
-        {
-            var name = document.getElementById("textfield").value
-            if (name == "Phil")
-            var textbox = document.getElementById('textbox');
-            var heading = document.getElementById('heading');
-            if (textbox.value == "Phil")
-            {
-                document.getElementById("demo").innerHTML = "Hello, " + name + ". You're really cool.";
-                heading.innerHTML= "Hello, " + textbox.value + ". You're really cool.";
-            }
-            else{
-                document.getElementById("demo").innerHTML = "Hello, " + name;
-                heading.innerHTML= "Hello, " + textbox.value + ". You're all right.";
-            }
 
-            heading.style = "background-color:red";
+    <script>
+        function Pawn()
+        {
+            console.log("Hello, world");
         }
     </script>
 </head>
 <body>
-    <p>Name:<input id="textfield" type="text"><a href="#" id="doit" onclick="do_something();">Greet</a></p>
-    <h1 id="heading" style="background-color:blue">This is a heading</h1>
-    <p id="demo">This is a paragraph. </p>
-    <p>Click <a href="#" onclick="hello();">here</a></p>
-    <p>Name: </p><input id="textbox" type="text"><button onclick="hello();">Greet</button>
-    <p>This is a paragraph. </p>
-    <p>Click <a href="http://google.com">here</a> to visit Google.</p>
-    <button type="button" class="btn btn-primary">This is a bootstrap button</button>
-    <a href="https://getbootstrap.com/" class="btn btn-primary">This is a link that looks like a button.</a>
+    <h1 style="background-color:rgb(255, 166, 0)">choose a piece to learn about</h1>
+    <button onclick="document.getElementById('Pawn').style.display='block'">Pawn</button>
+    <button onclick="document.getElementById('Bishop').style.display='block'">Bishop</button>
+    <button onclick="document.getElementById('Rook').style.display='block'">Rook</button>
+    <button onclick="document.getElementById('King').style.display='block'">King</button>
+    <button onclick="document.getElementById('Queen').style.display='block'">Queen</button>
+    <button onclick="document.getElementById('Knight').style.display='block'">Knight</button>
+    <p></p>
+    <p>Click <a href=https://www.chess.com>this</a> to visit Chess website</p>
+    <p id="Pawn" style="display:none">The pawn is the least powerful piece and is worth one point. If it is a pawn's first move, it can move forward one or two squares. If a pawn has already moved, then it can move forward just one square at a time. It attacks (or captures) each square diagonally to the left or right.</p>
+    <p id="Bishop" style="display:none">The bishop is considered a minor piece (like a knight) and is worth three points. A bishop can move diagonally as many squares as it likes, as long as it is not blocked by its own pieces or an occupied square. An easy way to remember how a bishop can move is that it moves like an "X" shape.</p>
+    <p id="Rook" style="display:none">The rook is considered a major piece (like the queen) and is worth five points. It can move as many squares as it likes left or right horizontally, or as many squares as it likes up or down vertically (as long as it isn't blocked by other pieces). An easy way to remember how a rook can move is that it moves like a "+" sign.</p>
+    <p id="King" style="display:none">The king is not a very powerful piece, as it can only move (or capture) one square in any direction. Please note that the king cannot be captured! When a king is attacked, it is called "check."</p>
+    <p id="Queen" style="display:none">The queen is considered a major piece (like a rook) and is worth nine points. It can move as many squares as it likes left or right horizontally, or as many squares as it likes up or down vertically (like a rook). The queen can also move as many squares as it likes diagonally (like a bishop). An easy way to remember how a queen can move is that it moves like a rook and a bishop combined!</p>
+    <p id="Knight" style="display:none">The knight is considered a minor piece (like a bishop) and is worth three points. The knight is the only piece in chess that can jump over another piece! It moves one square left or right horizontally and then two squares up or down vertically, OR it moves two squares left or right horizontally and then one square up or down vertically—in other words, the knight moves in an "L-shape." The knight can capture only what it lands on, not what it jumps over!</p>
+</body>
+</html>
